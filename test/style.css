@@ -1,0 +1,51 @@
+:root {
+  --couleur_fond: #9b7066;
+  --couleur_text: #ffffff;
+  --titre: "Shrikhand", serif;
+  --text: "Questrial", sans-serif;
+  --angle: 15em;
+}
+/**************************HEAD****************/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--couleur_fond);
+  overflow-wrap: anywhere;
+  font-family: var(--text);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/****************************NAV**********************/
+header {
+  display: flex;
+  justify-content: end;
+}
+nav {
+  position: fixed;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  margin-right: 5em;
+}
+nav a {
+  margin-right: 3em;
+  text-align: center;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: var(--couleur_text);
+  text-decoration: none;
+}
+nav a:hover {
+  color: black;
+}
+/************************TITRE**********************/
+
+#titre img {
+  width: 100%;
+  height: 50%;
+}
