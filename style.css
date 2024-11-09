@@ -390,37 +390,67 @@ button:hover {
   }
   header {
     display: none;
-  }
-  header2 {
+  } /* Style pour l'en-tête */
+  #header2 {
     display: block;
     position: fixed;
+    text-align: end;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
   }
-  #nav2 {
-    display: none;
+
+  .menu {
+    cursor: pointer;
+    display: inline-block;
   }
+
   .menu img {
     filter: invert(1);
-    width: 10%;
+    width: 30px;
   }
 
-  #nav2.active {
-    display: block;
-  }
-  .menu1 {
-    text-shadow: #ffffff 0 0 20px;
-    text-align: end;
-    z-index: 1;
-    display: block;
-    margin-top: 5%;
-    margin-right: 5%;
-    color: white;
-    grid-column: 1/3;
-    text-decoration: none;
+  #nav2 {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 8px;
   }
 
-  .menu2 {
+  #menu-toggle:checked + label + #nav2 {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu #croix {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu #burger {
     display: none;
   }
+
+  .menu1 {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    margin-right: 0.8em;
+    text-align: right;
+    text-shadow: 0 0 20px #ffffff;
+  }
+  .menu #croix {
+    display: none;
+    width: 25px;
+  }
+
+  .menu1:hover {
+    color: #ddd; /* Couleur de survol */
+  }
+
   nav a {
     margin: 0.7em;
     font-size: 0.7em;
@@ -495,6 +525,7 @@ button:hover {
     display: block;
   }
   #info a {
+    font-size: 1em;
     animation: brillant 2s linear infinite;
   }
   @keyframes brillant {
