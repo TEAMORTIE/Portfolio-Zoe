@@ -26,8 +26,7 @@ header {
   display: flex;
   justify-content: end;
 }
-
-header2 {
+#header2 {
   display: none;
 }
 .menu {
