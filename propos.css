@@ -128,14 +128,3 @@ main {
     display: none;
   }
 }
-
-@media (max-width: 321px) {
-  h1 {
-    margin-top: 2em;
-    font-size: 1.7em;
-  }
-
-  #propos p {
-    font-size: 1.3em;
-  }
-}

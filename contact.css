@@ -1,0 +1,42 @@
+body {
+  overflow-x: hidden;
+}
+#propos {
+  text-align: center;
+  margin-top: -25em;
+  margin-bottom: 20em;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+#propos p {
+  margin-top: 2em;
+  font-size: 1.7em;
+}
+
+@media (max-width: 426px) {
+  #contact img {
+    margin: 0;
+    display: block;
+    width: 30%;
+  }
+  #insta img {
+    width: 10%;
+  }
+
+  #contact2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #info {
+    margin-top: 0em;
+  }
+  #propos {
+    text-align: center;
+    margin-top: -25em;
+    margin-bottom: 10em;
+  }
+}

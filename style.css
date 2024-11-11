@@ -388,7 +388,7 @@ button:hover {
   }
   header {
     display: none;
-  } /* Style pour l'en-tête */
+  }
   #header2 {
     display: block;
     position: fixed;
