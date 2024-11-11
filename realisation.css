@@ -1,0 +1,93 @@
+:root {
+  --couleur_fond: #9b7066;
+  --couleur_text: #ffffff;
+  --titre: "Shrikhand", serif;
+  --text: "Questrial", sans-serif;
+  --angle: 15em;
+}
+#propos {
+  text-align: center;
+  margin-top: -25em;
+}
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+#propos p {
+  margin-top: 2em;
+  font-size: 2em;
+}
+main {
+  margin-top: 15em;
+}
+#grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5em;
+  text-align: center;
+}
+#grid p {
+  font-size: 2em;
+  margin-top: 6.5em;
+  display: none;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+#grid img:hover + p {
+  display: block; /* Affiche le texte au survol de l'image */
+}
+#grid img:hover {
+  filter: brightness(0.5);
+}
+
+#grid img {
+  border-radius: 2em;
+  width: 100%;
+  cursor: pointer;
+}
+#grid1 {
+  grid-column: 2/4;
+  grid-row: 1;
+}
+#grid2 {
+  grid-column: 4/6;
+  grid-row: 1;
+}
+#grid3 {
+  grid-column: 2/4;
+  grid-row: 2;
+}
+#grid4 {
+  grid-column: 4/6;
+  grid-row: 2;
+}
+#grid5 {
+  grid-column: 2/6;
+  grid-row: 3;
+}
+
+@media (max-width: 426px) {
+  #grid1 {
+    grid-column: 2/6;
+    grid-row: 1;
+  }
+  #grid2 {
+    grid-column: 2/6;
+    grid-row: 2;
+  }
+  #grid3 {
+    grid-column: 2/6;
+    grid-row: 3;
+  }
+  #grid4 {
+    grid-column: 2/6;
+    grid-row: 4;
+  }
+  #grid5 {
+    grid-column: 2/6;
+    grid-row: 5;
+  }
+}

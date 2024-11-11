@@ -1,0 +1,307 @@
+:root {
+  --couleur_fond: #9b7066;
+  --couleur_text: #ffffff;
+  --titre: "Shrikhand", serif;
+  --text: "Questrial", sans-serif;
+  --angle: 15em;
+}
+/**************************HEAD****************/
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: var(--couleur_text);
+  overflow-x: hidden;
+  background-color: var(--couleur_fond);
+  overflow-wrap: anywhere;
+  font-family: var(--text);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/****************************NAV**********************/
+header {
+  display: flex;
+  justify-content: end;
+}
+#header2 {
+  display: none;
+}
+.menu {
+  display: none;
+}
+nav {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  display: flex;
+  margin-right: 5em;
+}
+nav a {
+  margin-right: 3em;
+  text-align: center;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  color: var(--couleur_text);
+  text-decoration: none;
+  text-shadow: white 0 0 20px;
+  transition: all 0.2s ease;
+}
+nav a:hover {
+  text-shadow: black 0 0 20px;
+
+  color: black;
+}
+/************************TITRE**********************/
+#propos {
+  margin-right: 13%;
+  margin-left: 13%;
+}
+#titre img {
+  object-fit: cover;
+  width: 100%;
+  height: 35em;
+}
+
+h3 {
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+#contact {
+  margin-bottom: 5em;
+  margin-top: 5em;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+#contact2 {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+#contact img {
+  border-radius: 1em;
+  width: 25%;
+}
+#info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#info a {
+  color: var(--couleur_text);
+  text-decoration: none;
+  font-size: 1.5em;
+}
+#insta img {
+  margin-top: 3em;
+  width: 9%;
+  margin-bottom: -20px;
+  transform: rotate(-20deg);
+  margin-left: 30%;
+  box-shadow: #ffffff 0 0 10px;
+  transition: all 0.2s ease;
+}
+#insta {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#info a {
+  margin-bottom: 0.2em;
+  text-shadow: #ffffff 0 0 10px;
+  transition: all 0.2s ease;
+}
+/************************FOOTER***********************/
+footer {
+  font-size: 0.8em;
+  padding: 1.5em;
+  color: black;
+  background-color: #b18c80;
+}
+#footer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#reseaux {
+  margin-left: 10em;
+  display: flex;
+  justify-content: end;
+  border-right: 1px black solid;
+  padding-right: 1em;
+}
+
+#reseaux img {
+  margin-right: 1em;
+  width: 8%;
+}
+#footer a {
+  margin-left: 1em;
+  font-weight: 400;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+#info a:hover {
+  color: black;
+  text-shadow: black 0 0 20px;
+}
+#insta img:hover {
+  box-shadow: black 0 0 20px;
+}
+#footer a:hover {
+  color: white;
+}
+/*****************media***************/
+
+@media (max-width: 1100px) {
+  nav a {
+    font-size: 1em;
+  }
+  nav {
+    margin-right: 0;
+  }
+  #insta img {
+    margin-bottom: -10px;
+    margin-left: 25%;
+  }
+}
+
+@media (max-width: 640px) {
+  nav a {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 870px) {
+  #info a {
+    color: var(--couleur_text);
+    text-decoration: none;
+    font-size: 1em;
+  }
+  header {
+    justify-content: space-around;
+    margin: 0;
+  }
+  nav a {
+    margin: 1em;
+  }
+  nav {
+    text-align: center;
+  }
+
+  footer {
+    font-size: 0.5em;
+  }
+}
+@media (max-width: 426px) {
+  .menu {
+    display: block;
+    height: auto;
+    text-align: end;
+    margin-top: 2%;
+    margin-right: 5%;
+  }
+  header {
+    display: none;
+  } /* Style pour l'en-tête */
+  #header2 {
+    display: block;
+    position: fixed;
+    text-align: end;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .menu {
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .menu img {
+    filter: invert(1);
+    width: 30px;
+  }
+
+  #nav2 {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  #menu-toggle:checked + label + #nav2 {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu #croix {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu #burger {
+    display: none;
+  }
+
+  .menu1 {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+    margin-right: 0.8em;
+    text-align: right;
+    text-shadow: 0 0 20px #ffffff;
+  }
+  .menu #croix {
+    display: none;
+    width: 25px;
+  }
+
+  .menu1:hover {
+    color: #ddd; /* Couleur de survol */
+  }
+
+  nav a {
+    margin: 0.7em;
+    font-size: 0.7em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  #contact img {
+    display: none;
+  }
+  #info {
+    margin-top: 2em;
+  }
+  #info img {
+    display: block;
+  }
+  #info a {
+    font-size: 1em;
+    animation: brillant 2s linear infinite;
+  }
+  @keyframes brillant {
+    0% {
+      text-shadow: white 0 0 20px;
+    }
+    50% {
+      text-shadow: white 0 0 0px;
+    }
+    100% {
+      text-shadow: white 0 0 20px;
+    }
+  }
+  footer {
+    font-size: 0.2em;
+  }
+}
